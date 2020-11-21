@@ -1,0 +1,40 @@
+﻿@model AdvertisementViewModel
+
+<section class="container-fluid background">
+    <div class="bg-img bg-img2 flex-container">
+        <h3>Advertise with us today</h3>
+        <h1 class="mx-4">Grow your business and get Traffic</h1>
+    </div>
+</section>
+
+<section class="container-fluid advert advert-background">
+    <div class="container advert-flex">
+        <h1>Advertisement Form</h1>
+        <div class="advert-form">
+            <form class="form" enctype="multipart/form-data" asp-action="CreateAdvert" method="post">
+                <div class="form-group">
+                    <p></p>
+                    <label class="label" for="advertName">Advert Name</label>
+                    <div class="divider"></div>
+                    <input type="text" class="form-item" name="advertName" asp-for="AdvertName" id="advertName" placeholder="Enter Advert name"/>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="advertLink">Advert Link</label>
+                    <div class="divider"></div>
+                    <input type="text" class="form-item" name="advertLink" id="advertLink" asp-for="AdvertLink" placeholder="Enter Redirection Link"/>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="brandName">Advert Brand Name or Company</label>
+                    <div class="divider"></div>
+                    <input type="text" class="form-item" name="AdvertCompanyOrBrand" id="brandName" asp-for="AdvertCompanyOrBrand" placeholder="Enter Brand Name"/>
+                </div>
+                <div class="form-group" style="border-bottom: 1px solid white">
+                    <label class="label" for="advertImage">Advert Image</label>
+                    <div class="divider"></div>
+                    <input type="file" class="form-item" name="advertImage" asp-for="AdvertImage" id="advertImage" placeholder="Upload an Image for the advert"/>
+                </div>
+                <button class="btn btn-outline-success form-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,43 @@
+﻿@model Tuple<Exam.Domains.User,Exam.Domains.Resume, string>
+
+@{
+    ViewData["Title"] = "ViewApplicant";
+}
+
+
+
+<section class="container-fluid background">
+    <div class="bg-img bg-img3 flex-container">
+        <h1>ViewApplicant</h1>
+    </div>
+</section>
+
+<section class="container-fluid background p-3">
+    <h2>Applicant file</h2>
+    <div class="applicant-pane">
+        <div class="applicant-pane-flex">
+            <div class="job-description-flex">
+                <div class="side1">
+                    <img class="applicant-image" src="@Model.Item1.ImageLocation" alt=""/>
+                </div>
+                <div class="side2">
+                    <p>First Name: @Model.Item1.FirstName</p>
+                    <p>Last Name: @Model.Item1.LastName</p>
+                    
+                    <p>Resume Details ...</p>
+                    <p>Skills: @Model.Item2.Skills</p>
+                    <p>Brief Summary of Self: @Model.Item2.BriefProfile</p>
+                    
+                    <a asp-action="DownloadResume" asp-controller="Admin" asp-route-userId="@Model.Item1.ApplicationUserId" class="btn action-btn1">
+                        Download Resume
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="action-btns">
+            <a asp-action="RejectApplicant" asp-route-id="@Model.Item1.Id" asp-route-jobId="@Model.Item3" class="btn action-btn1"><span class="fas fa-times"></span> Reject Applicant</a>
+            <a asp-action="AcceptApplicant" asp-route-id="@Model.Item1.Id" asp-route-jobId="@Model.Item3" class="btn action-btn2"><span class="fas fa-check"></span> Accept Applicant</a>
+        </div>
+    </div>
+</section>

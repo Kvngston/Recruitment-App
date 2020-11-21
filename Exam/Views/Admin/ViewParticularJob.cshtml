@@ -1,0 +1,35 @@
+﻿@model Exam.Domains.Job
+@{
+    ViewData["Title"] = "ViewParticularJob";
+}
+
+
+<section class="container-fluid background">
+    <div class="bg-img bg-img3 flex-container">
+        <h1>View Job</h1>
+    </div>
+</section>
+
+<section class="container-fluid background">
+    <div class="main-flex">
+        <div class="job-description-flex">
+            <div class="side1">
+                <span class="company-logo">skn</span>
+            </div>
+            <div class="side2">
+                <h3>@Model.JobPosition</h3>
+                <h4>@Model.BrandOrCompanyName</h4>
+                <p>@Model.JobType</p>
+                <p class="description">@Model.JobDescription</p>
+                <p>@Model.DatePosted</p>
+            </div>
+        </div>
+
+        <a asp-action="ViewJobApplicants" asp-route-jobId="@Model.Id" class="rounded view-job-applicants" >
+            <div>
+                <h6>View Applicants</h6>
+            </div>
+        </a>
+
+    </div>
+</section>

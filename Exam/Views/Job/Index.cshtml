@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Exam.Domains.Job>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Recruitment Application</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <header>
+        <nav class="fixed-top navbar navbar-expand-lg navbar-light navbar-bg">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Recruitment Application</a>
+                <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler"
+                        data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<section class="container-fluid background">
+    <div class="bg-img bg-img3 flex-container">
+        <h3>Look through the catalogue</h3>
+        <h1 class="mx-4">Find That Dream Job Today</h1>
+    </div>
+</section>
+
+<section class="container-fluid background">
+        <div class="container job-flex">
+            @foreach (var job in Model)
+            {
+                <div class="job rounded">
+                    <div class="icon-side">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="job-details">
+                        <h3 class="small-size">@job.JobPosition</h3>
+                        <h4 class="small-size">@job.BrandOrCompanyName</h4>
+                        <div class="date-location">
+                            <p class="mr-3"><span class="fas fa-location-arrow"></span> Location</p>
+                            <div class="divider2 mr-3"></div>
+                            <p>
+                                <span class="fas fa-calendar-alt"></span> @job.DatePosted.ToShortDateString()
+                            </p>
+                        </div>
+                        <div class="apply-type">
+                            <div class="bg-danger job-type mr-2">@job.JobType</div>
+                            @Html.ActionLink("Apply", "ViewParticularJob", "Job", new {jobId=@job.Id}, new {@class = "btn bg-primary apply"})
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+    <footer class="fixed px-4">
+        <div class="container footer-container">
+            <div class="footer-section1">
+                <p class="section1-p">Copyrights &copy; Job Recruitment Site</p>
+            </div>
+
+            <div class="footer-section2">
+                <span class="social-icon fab fa-twitter"></span>
+                <span class="social-icon fab fa-instagram"></span>
+                <span class="social-icon fab fa-facebook-f"></span>
+                <span class="social-icon fab fa-github"></span>
+            </div>
+        </div>
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/all.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>

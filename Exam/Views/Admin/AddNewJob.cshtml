@@ -1,0 +1,45 @@
+﻿@model Exam.Models.JobViewModel
+
+@{
+    ViewData["Title"] = "AddNewJob";
+}
+
+<section class="container-fluid background">
+    <div class="bg-img bg-img4 flex-container">
+        <h3>Edit Your Resume</h3>
+        <h1 class="mx-4">Find That Dream Job Today</h1>
+    </div>
+</section>
+
+
+<section class="container-fluid background">
+    <div class="edit-resume-flex">
+        <h2 class="text-center">Add New Job</h2>
+        <form asp-action="AddNewJob" class="edit-resume-form-flex" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="edit-resume-form-group">
+                <label asp-for="JobPosition" class="control-label"></label>
+                <input asp-for="JobPosition" class="form-control"/>
+                <span asp-validation-for="JobPosition" class="text-danger"></span>
+            </div>
+            <div class="edit-resume-form-group">
+                <label asp-for="BrandOrCompanyName" class="control-label"></label>
+                <input asp-for="BrandOrCompanyName" class="form-control"/>
+                <span asp-validation-for="BrandOrCompanyName" class="text-danger"></span>
+            </div>
+            <div class="edit-resume-form-group">
+                <label asp-for="JobType" class="control-label"></label>
+                <input asp-for="JobType" class="form-control"/>
+                <span asp-validation-for="JobType" class="text-danger"></span>
+            </div>
+            <div class="edit-resume-form-group">
+                <label asp-for="JobDescription" class="control-label"></label>
+                <input asp-for="JobDescription" class="form-control"/>
+                <span asp-validation-for="JobDescription" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group-btn">
+                <input type="submit" value="Create" class="btn resume-btn"/>
+            </div>
+        </form>
+    </div>
+</section>

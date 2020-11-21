@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Exam.Domains.Job>
+
+@{
+    ViewData["Title"] = "ViewAllJobs";
+}
+
+
+
+<section class="container-fluid background">
+    <div class="bg-img bg-img3 flex-container">
+        <h1>ViewAllJobs</h1>
+    </div>
+</section>
+
+<section class="container-fluid background">
+    <div class="jobs-flex">
+        <h1 class="text-center">All Jobs</h1>
+        @foreach (var item in Model)
+        {
+            <div class="job-space">
+                <p class="individual-spaces">@item.JobPosition</p>
+                <p class="individual-spaces">@item.BrandOrCompanyName</p>
+                <p class="individual-spaces">@item.JobType</p>
+                <a asp-action="ViewParticularJob" asp-route-jobId="@item.Id" class="btn action-btn2"><span class="fas fa-check"></span> View Job</a>
+            </div>
+        }
+    </div>
+</section>

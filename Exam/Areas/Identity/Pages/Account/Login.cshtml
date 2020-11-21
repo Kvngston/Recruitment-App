@@ -1,0 +1,36 @@
+﻿@page
+@model LoginModel
+
+<section class="container-fluid background">
+    <div class="bg-img flex-container">
+        <h3>Advertise with us today</h3>
+        <h1 class="mx-4">Grow your business and get Traffic</h1>
+    </div>
+</section>
+
+<section class="container-fluid advert-background">
+    <div class="container advert-flex">
+        <h3>Login</h3>
+        <div class="advert-form">
+            <form action="" class="form" method="post">
+                <div class="form-group">
+                    <label class="label" for="email">Email </label>
+                    <div class="divider"></div>
+                    <input type="text" class="form-item" name="email" id="email" placeholder="Enter Your Email" />
+                </div>
+                <div class="form-group" style="border-bottom: 1px solid white">
+                    <label class="label" for="password">Password </label>
+                    <div class="divider"></div>
+                    <input type="password" class="form-item" name="password" id="password" placeholder="Enter your password"/>
+                </div>
+                <button class="btn btn-outline-success form-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

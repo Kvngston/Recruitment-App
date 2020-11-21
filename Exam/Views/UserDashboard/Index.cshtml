@@ -1,0 +1,77 @@
+﻿@model Tuple<List<Exam.Domains.Application>, Exam.Domains.User, List<Exam.Domains.WorkExperience>>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section class="container-fluid background">
+    <div class="bg-img flex-container">
+        <h3>User Applications and Resume</h3>
+    </div>
+</section>
+
+<section class="container-fluid background">
+    <div class="dashboard-flex">
+        <div class="Applications">
+            <h2>User Applications</h2>
+            @if (Model.Item1.Count > 0)
+            {
+                @foreach (var userApplication in Model.Item1)
+                {
+                    <div class="rounded mb-3 job-applications-flex">
+                        <div class="logo-side">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="applications-pane">
+                            <h3>@userApplication.Job.JobPosition</h3>
+                            <h4>@userApplication.Job.BrandOrCompanyName</h4>
+                            <div class="date-location phone-size">
+                                <p class="mr-3"><span class="fas fa-location-arrow"></span> Location</p>
+                                <div class="divider2 mr-3"></div>
+                                <p><span class="fas fa-calendar-alt"></span> @userApplication.Job.DatePosted</p>
+                            </div>
+                            <div class="apply-type phone-size">
+                                <div class="bg-danger job-type mr-2"> @userApplication.Job.JobType</div>
+                                @Html.ActionLink("View Job Details", "ViewJobDetails", "UserDashboard", new {jobId = @userApplication.JobId}, new {@class = "btn bg-primary apply"})
+
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>You Have no Job Applications at the moment</p>
+            }
+        </div>
+        <div class="Experiences mt-5">
+            <h2>Job Experience</h2>
+            @if (Model.Item3.Count > 0)
+            {
+                @foreach (var experience in Model.Item3)
+                {
+                    <div class="rounded experience-pane">
+                        <h3>@experience.PositionName</h3>
+                        <h4>@experience.CompanyName</h4>
+                        <p>@experience.TimeDuration</p>
+                    </div>
+                }
+                <a asp-action="AddWorkExperience" asp-controller="Resume" class="rounded add-experience mt-3">
+                    <div class="">
+                        <h6><span class="fas fa-plus"></span> Add Work Experience</h6>
+                    </div>
+                </a>
+            }
+            else
+            {
+                <a asp-action="Index" asp-controller="Resume" class="rounded view-job-applicants" >
+                            <div>
+                                <h6>Add Resume</h6>
+                            </div>
+                        </a>
+            }
+            
+        </div>
+    </div>
+</section>
+

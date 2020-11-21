@@ -1,0 +1,50 @@
+﻿@model Exam.Models.WorkExperienceViewModel
+
+@{
+    ViewData["Title"] = "AddWorkExperience";
+}
+
+
+<section class="container-fluid background">
+    <div class="bg-img bg-img3 flex-container">
+        <h3>Add More Work Experience</h3>
+        <h1 class="mx-4">Find That Dream Job Today</h1>
+    </div>
+</section>
+
+<section class="container-fluid background">
+    <div class="edit-resume-flex">
+        <h2>Add More Work Experience</h2>
+        <form asp-action="AddWorkExperience" method="post" class="work-experience-form-flex">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="experience-form-group">
+                <label asp-for="EmploymentType" class="control-label">EmployeeType</label>
+                <input asp-for="EmploymentType" class="form-control"/>
+                <span asp-validation-for="EmploymentType" class="text-danger"></span>
+            </div>
+            <div class="experience-form-group">
+                <label asp-for="CompanyName" class="control-label">Company Name</label>
+                <input asp-for="CompanyName" class="form-control"/>
+                <span asp-validation-for="CompanyName" class="text-danger"></span>
+            </div>
+            <div class="experience-form-group">
+                <label asp-for="PositionName" class="control-label">Position Name</label>
+                <input asp-for="PositionName" class="form-control"/>
+                <span asp-validation-for="PositionName" class="text-danger"></span>
+            </div>
+            <div class="experience-form-group">
+                <label asp-for="TimeDuration" class="control-label">Time Duration</label>
+                <input asp-for="TimeDuration" class="form-control"/>
+                <span asp-validation-for="TimeDuration" class="text-danger"></span>
+            </div>
+            <div class="experience-form-group">
+                <label asp-for="SummaryOfWorkDone" class="control-label">Summary Of Work Done</label>
+                <input asp-for="SummaryOfWorkDone" class="form-control"/>
+                <span asp-validation-for="SummaryOfWorkDone" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group-btn">
+                <input type="submit" value="Add" class="btn edit-resume-btn"/>
+            </div>
+        </form>
+    </div>
+</section>

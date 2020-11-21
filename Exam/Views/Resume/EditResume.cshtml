@@ -1,0 +1,40 @@
+﻿@model Exam.Models.EditResumeViewModel
+
+@{
+    ViewData["Title"] = "EditResume";
+}
+
+
+<section class="container-fluid background">
+    <div class="bg-img bg-img4 flex-container">
+        <h3>Edit Your Resume</h3>
+        <h1 class="mx-4">Find That Dream Job Today</h1>
+    </div>
+</section>
+
+<section class="container-fluid background">
+    <div class="edit-resume-flex">
+        <h2>Edit Resume</h2>
+        <form asp-action="EditResume" class="edit-resume-form-flex" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="edit-resume-form-group">
+                <label asp-for="BriefSelfDescription" class="control-label"></label>
+                <input asp-for="BriefSelfDescription" class="form-control"/>
+                <span asp-validation-for="BriefSelfDescription" class="text-danger"></span>
+            </div>
+            <div class="edit-resume-form-group">
+                <label asp-for="Skills" class="control-label"></label>
+                <input asp-for="Skills" class="form-control"/>
+                <span asp-validation-for="Skills" class="text-danger"></span>
+            </div>
+            <div class="edit-resume-form-group">
+                <label asp-for="ResumePdf" class="control-label"></label>
+                <input asp-for="ResumePdf" type="file" class="form-control"/>
+                <span asp-validation-for="ResumePdf" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group-btn">
+                <input type="submit" value="Save" class="btn edit-resume-btn"/>
+            </div>
+        </form>
+    </div>
+</section>

@@ -1,0 +1,160 @@
+﻿@model Exam.Domains.Advert
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section class="container-fluid background">
+    <div class="bg-img bg-img1 flex-container">
+        <h3>Find Your Desired Job...</h3>
+        <h1>Join Others and flex today....</h1>
+    </div>
+</section>
+
+<section class="container-fluid advert">
+    <div class="advert-space">
+        @if (Model != null)
+        {
+            <a href="@Model.AdvertLink" class="advert-image-link">
+                <img src="@Model.AdvertImageLocation" class="advert-image" alt="@Model.AdvertName">
+            </a>
+        }
+        else
+        {
+            <h1 class="text-center">Advertise Here</h1>
+        }
+    </div>
+</section>
+<section class="container-fluid how-it-works">
+    <div class="works-flex">
+        <div class="inner-text">
+            <h1>How it works</h1>
+            <p>Guide, learn how to navigate and apply for jobs on the site. With these easy steps</p>
+        </div>
+        <div class="inner-signs">
+            <div class="signs">
+                <div class="circle-border icon1">
+                    <div class="circle circle1">
+                        <span class="fas fa-file sign-icon "></span>
+                    </div>
+                </div>
+                <p class="mt-3 sign-text">Upload Your Resume</p>
+                <p>Register and Upload your resume to the system</p>
+            </div>
+            <div class="signs">
+                <div class="circle-border icon2">
+                    <div class="circle circle2">
+                        <span class="fas fa-search  sign-icon"></span>
+                    </div>
+                </div>
+                <p class="mt-3 sign-text">Find Dream Job</p>
+                <p>Browse the catalog of jobs and find that dream one.</p>
+            </div>
+            <div class="signs">
+                <div class="circle-border icon3">
+                    <div class="circle circle3">
+                        <span class="fas fa-paper-plane sign-icon"></span>
+                    </div>
+                </div>
+                <p class="mt-3 sign-text">Apply For Job</p>
+                <p>Send in your Job Application with your resume</p>
+            </div>
+            <div class="signs">
+                <div class="circle-border icon4">
+                    <div class="circle circle4">
+                        <span class="fas fa-check sign-icon"></span>
+                    </div>
+                </div>
+                <p class="mt-3 sign-text">Acceptance</p>
+                <p>Wait for your acceptance status</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid featured-jobs">
+    <div class="featured-flex">
+
+    </div>
+</section>
+<section class="footer-section">
+    <div class="footer-section-flex">
+        <div class="subscribe-flex">
+            <h3>Stay In Touch</h3>
+            <h3>Subscribe to Our News feed. Don't miss out on new Jobs posted</h3>
+            <div class="email-flex">
+                <input type="text" class="rounded email-input" placeholder="Enter Your Email">
+                <button class="btn btn-success send-btn">Submit</button>
+            </div>
+        </div>
+        <div class="testimonies-flex">
+            <h2>Testimonies</h2>
+            <div class="testimony-thumbnails">
+                <div class="testimony">
+                    <div class="">
+                        <img alt="" class="img-circle" src="images/avatar1.jpg"/>
+                    </div>
+                    <p class="figure-caption mt-3">Mark Zuck</p>
+                    <div>
+                        <span class="fas fa-quote-left"></span>
+                        <p>sljfsjdnsdnslfv sdjsijdnskdk</p>
+                        <span class="fas fa-quote-right fa-pull-right"></span>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="">
+                        <img alt="" class="img-circle" src="images/avatar2.jpg"/>
+                    </div>
+                    <p class="figure-caption mt-3">Mark Zuck</p>
+                    <div>
+                        <span class="fas fa-quote-left"></span>
+                        <p>sljfsjdnsdnslfv sdjsijdnskdk</p>
+                        <span class="fas fa-quote-right fa-pull-right"></span>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="">
+                        <img alt="" class="img-circle" src="images/avatar3.jpg"/>
+                    </div>
+                    <p class="figure-caption mt-3">Mark Zuck</p>
+                    <div>
+                        <span class="fas fa-quote-left"></span>
+                        <p>sljfsjdnsdnslfv sdjsijdnskdk</p>
+                        <span class="fas fa-quote-right fa-pull-right"></span>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="">
+                        <img alt="" class="img-circle" src="images/avatar4.jpg"/>
+                    </div>
+                    <p class="figure-caption mt-3">Mark Zuck</p>
+                    <div>
+                        <span class="fas fa-quote-left"></span>
+                        <p>sljfsjdnsdnslfv sdjsijdnskdk</p>
+                        <span class="fas fa-quote-right fa-pull-right"></span>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="">
+                        <img alt="" class="img-circle" src="images/avatar5.png"/>
+                    </div>
+                    <p class="figure-caption mt-3">Mark Zuck</p>
+                    <div>
+                        <span class="fas fa-quote-left"></span>
+                        <p>sljfsjdnsdnslfv sdjsijdnskdk</p>
+                        <span class="fas fa-quote-right fa-pull-right"></span>
+                    </div>
+                </div>
+                <div class="testimony">
+                    <div class="">
+                        <img alt="" class="img-circle" src="images/avatar6.jpg"/>
+                    </div>
+                    <p class="figure-caption mt-3">Mark Zuck</p>
+                    <div>
+                        <span class="fas fa-quote-left"></span>
+                        <p>sljfsjdnsdnslfv sdjsijdnskdk</p>
+                        <span class="fas fa-quote-right fa-pull-right"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,87 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Recruitment Application</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body class="admin-dashboard-body">
+<header>
+    <nav class="fixed-top navbar navbar-expand-lg navbar-light navbar-bg">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Recruitment Application</a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <partial name="_LoginPartial" />
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="container-fluid background">
+    <div class="admin-details-flex">
+        <div class="rounded details-pane active-users-flex">
+            <h3>Total Active Users</h3>
+            <h1>100</h1>
+        </div>
+        <div class="rounded details-pane total-jobs-flex">
+            <h3>Total Jobs</h3>
+            <h1>100</h1>
+        </div>
+        <div class="rounded details-pane total-applications-flex">
+            <h3>Total Applications</h3>
+            <h1>100</h1>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid background">
+    <div class="admin-dashboard-flex">
+        <div class="add-new-job-flex">
+            <a asp-action="AddNewJob" class="add-new-job-flex">
+                <span class="fas fa-plus"></span>
+                <p>Add New Job</p>
+            </a>
+
+        </div>
+        <div class="view-jobs-flex">
+            <a asp-action="ViewAllJobs" class="view-jobs-flex">
+                <span class="fas fa-hammer"></span>
+                <p>View All Jobs</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="fixed px-4">
+    <div class="container footer-container">
+        <div class="footer-section1">
+            <p class="section1-p">Copyrights &copy; Job Recruitment Site</p>
+        </div>
+
+        <div class="footer-section2">
+            <span class="social-icon fab fa-twitter"></span>
+            <span class="social-icon fab fa-instagram"></span>
+            <span class="social-icon fab fa-facebook-f"></span>
+            <span class="social-icon fab fa-github"></span>
+        </div>
+    </div>
+
+</footer>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/all.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+</body>

@@ -1,0 +1,1820 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-bg {
+    background-color: white !important;
+    box-shadow: 0 5px 6px -6px #777;
+}
+
+.bg-img {
+    width: 100%;
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: gray url("../Images/scott-graham-5fNmWej4tAA-unsplash.jpg") no-repeat;
+    background-size: cover;
+}
+.bg-img1 {
+    background: gray url("../Images/scott-graham-5fNmWej4tAA-unsplash.jpg") no-repeat;
+    background-size: cover;
+}
+
+.bg-img2 {
+    background: gray url("../Images/pawel-czerwinski-_9dSF0Hwitw-unsplash.jpg") no-repeat;
+    background-size: cover;
+}
+
+.bg-img3 {
+    background: gray url("../Images/green-chameleon-s9CC2SKySJM-unsplash.jpg") no-repeat;
+    background-size: cover;
+}
+
+.bg-img4{
+    background: gray url("../Images/markus-winkler-7iSEHWsxPLw-unsplash.jpg") no-repeat;
+    background-size: cover;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.background {
+    margin-top: 4.5%;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.advert-space {
+    width: 100%;
+    height: 25vh;
+    background: pink;
+}
+
+.how-it-works{
+    width: 100%;
+    min-height: 600px;
+    padding-top: 5%;
+}
+
+.works-flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.inner-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+}
+
+.inner-signs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+    width: 100%;
+    height: 70%;
+}
+
+.signs{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-border{
+    width: 150px;
+    height: 150px;
+    padding: 3%;
+    border-radius: 50%;
+}
+
+.icon1{
+    border: 1px solid red;
+}
+
+.icon2{
+    border: 1px solid orangered;
+}
+
+.icon3{
+    border: 1px solid yellow;
+}
+
+.icon4{
+    border: 1px solid green;
+}
+
+.circle1{
+    background: red;
+}
+
+.circle2{
+    background: orange;
+}
+
+.circle3{
+    background: yellow;
+}
+.circle4{
+    background: green;
+}
+
+.circle{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.sign-icon{
+    font-size: 70px;
+}
+
+.sign-text{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.footer-section{
+    width: 100%;
+    min-height: 500px;
+    background: gray;
+}
+
+.footer-section-flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-flex{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 5%;
+    order: 2;
+}
+
+.email-flex{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.email-input{
+    padding: 15px;
+    width: 100%;
+}
+.send-btn{
+    padding: 15px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.testimonies-flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+    color: white;
+    order: 1;
+}
+
+.testimony-thumbnails{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.testimony{
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+.footer-container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.footer-section1{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-section2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social-icon{
+    width: 10% !important;
+}
+
+.section1-p{
+    margin-top: 15px;
+}
+
+
+.advert-background{
+    padding: 75px;
+    min-height: 300px;
+}
+
+.advert-form{
+    width: 80%;
+    min-height: 300px;
+}
+
+.form{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid white;
+}
+
+.label{
+    width: 29%;
+    padding: 20px;
+}
+
+.divider{
+    border-left: 2px solid #bbb;
+    margin-top: 3px;
+    height: 1.5cm;
+    width: 1px;
+}
+
+.form-item{
+    width: 70%;
+    padding: 20px;
+    border: none;
+    background: none;
+}
+
+.form-btn{
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    /*color: white;*/
+    /*outline-color: white;*/
+    /*border-color: white;*/
+}
+
+input:focus{
+    outline: none !important;
+}
+
+/*::placeholder{*/
+/*    color: white;*/
+/*}*/
+
+.advert-flex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.advert-footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.job-flex{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5%;
+    justify-content: space-evenly;
+}
+
+.job{
+    width: 47%;
+    height: 200px;
+    display: flex;
+    border: 1px solid #bbb;
+    box-shadow: #b9bbbe;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.icon-side{
+    padding: 30px;
+    width: 30%;
+    height: 100%;
+    font-size: 70px;
+}
+
+.job-details{
+    width: 69%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.date-location{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.divider2{
+    border-left: 2px solid #bbb;
+    margin-top: 3px;
+    height: 0.6cm;
+    width: 1px;
+}
+
+.apply-type{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.job-type{
+    padding: 5px 15px;
+    color: white;
+}
+
+.apply{
+    padding: 5px 20px !important;
+    color: white;
+}
+
+
+.main-flex{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-description-flex{
+    min-height: 400px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    order: 2;
+}
+
+.side1{
+    width: 40%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side2{
+    width: 60%;
+    height: 500px;
+    background-color: #ffebcd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-job-applicants{
+    width: 90%;
+    height: 50px;
+    border: 1px solid green;
+    order: 1;
+    margin-top: 50px;
+    text-decoration: none;
+    color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-flex{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Applications{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.applications-pane{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.job-applications-flex{
+    width: 90%;
+    min-height: 100px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-side{
+    padding: 10px;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    font-size: 70px;
+}
+
+.Experiences{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-pane{
+    width: 90%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25%;
+    border: 1px solid rebeccapurple;
+}
+
+.add-experience{
+    width: 90%;
+    height: 50px;
+    outline-color: green;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    text-decoration: none;
+}
+
+.candidates-container-flex{
+    width: 100%;
+    min-height: 575px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.candidates-flex{
+    width: 90%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #bbbbbb;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.applicant-pane{
+    width: 100%;
+    min-height: 575px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.action-btns{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.action-btn1{
+    background-color: snow;
+    padding: 10px 25px;
+    border: 2px solid red;
+    color: red;
+}
+
+.action-btn2{
+    background-color: snow;
+    padding: 10px 25px;
+    border: 2px solid green;
+    color: green;
+}
+
+.resume-pane{
+    width: 100%;
+    min-height: 575px;
+
+}
+
+.admin-dashboard-flex{
+    width: 100%;
+    height: 565px;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 20px 20px;
+    font-size: 40px;
+}
+
+.add-new-job-flex{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-jobs-flex{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jobs-flex{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.individual-spaces{
+    width: 25%;
+}
+
+.job-space{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.applicant-image{
+    width: 70%;
+    height: 300px;
+}
+
+.advert-image-link{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.advert-image{
+    width: 100%;
+    height: 25vh;
+}
+
+.add-resume-flex{
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    flex-direction: column;
+}
+
+.add-resume-form-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.resume-form-group{
+    width: 45%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.control-label{
+    margin-bottom: 10px;
+}
+
+.form-control{
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+.resume-form-group-btn{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-btn{
+    width: 20%;
+    height: 100%;
+    background: none;
+    border: 2px solid green;
+}
+
+.resume-btn:hover{
+    background: green;
+}
+
+.edit-resume-flex{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-resume-form-flex{
+    width: 60%;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-resume-form-group{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.edit-resume-btn{
+    width: 30%;
+    height: 80%;
+    background: none;
+    border: 2px solid green;
+}
+
+.edit-resume-btn:hover{
+    background: green;
+}
+
+
+.work-experience-form-flex{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.experience-form-group{
+    width: 48%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.admin-details-flex{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+
+}
+
+.details-pane{
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.active-users-flex{
+}
+
+.total-jobs-flex{
+}
+
+.total-applications-flex{
+}
+
+.admin-dashboard-body{
+    background: no-repeat url("../Images/isaac-smith-6EnTPvPPL6I-unsplash.jpg");
+    background-size: contain;
+}
+
+@media only screen
+and (min-device-width: 280px)
+and (max-device-width: 320px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .how-it-works{
+        padding: 15px;
+        min-height: 600px;
+    }
+
+    .works-flex{
+        width: 100%;
+    }
+
+    .inner-text{
+        height: 20%;
+        justify-content: center;
+    }
+
+    .inner-signs{
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .signs{
+        width: 100%;
+        height: 40%;
+        padding: 5%;
+    }
+
+    .circle-border{
+        width: 100px;
+        height: 100px;
+        padding: 1%;
+        border-radius: 50%;
+    }
+
+    .sign-icon{
+        font-size: 40px;
+    }
+
+    .footer-section{
+        width: 100%;
+        min-height: 500px;
+        background: darkblue;
+    }
+
+    .footer-section-flex{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subscribe-flex{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        padding: 5%;
+    }
+
+    .testimonies-flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%;
+        color: white;
+    }
+    .testimony{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .section1-p{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .job-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .job{
+        width: 100%;
+    }
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+    /* STYLES GO HERE */
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .how-it-works{
+        padding: 15px;
+        min-height: 600px;
+    }
+
+    .works-flex{
+        width: 100%;
+    }
+
+    .inner-text{
+        height: 20%;
+        justify-content: center;
+    }
+
+    .inner-signs{
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .signs{
+        width: 100%;
+        height: 40%;
+        padding: 5%;
+    }
+
+    .circle-border{
+        width: 100px;
+        height: 100px;
+        padding: 1%;
+        border-radius: 50%;
+    }
+
+    .sign-icon{
+        font-size: 40px;
+    }
+
+    .footer-section{
+        width: 100%;
+        min-height: 500px;
+        background: darkblue;
+    }
+
+    .footer-section-flex{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subscribe-flex{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        padding: 5%;
+    }
+
+    .testimonies-flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%;
+        color: white;
+    }
+    .testimony{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .section1-p{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+
+    .job-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .job{
+        width: 100%;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width: 321px) {
+    /* STYLES GO HERE */
+
+
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width: 320px) {
+    /* STYLES GO HERE */
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .how-it-works{
+        padding: 15px;
+        min-height: 600px;
+    }
+
+    .works-flex{
+        width: 100%;
+    }
+
+    .inner-text{
+        height: 20%;
+        justify-content: center;
+    }
+
+    .inner-signs{
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .signs{
+        width: 100%;
+        height: 40%;
+        padding: 5%;
+    }
+
+    .circle-border{
+        width: 100px;
+        height: 100px;
+        padding: 1%;
+        border-radius: 50%;
+    }
+
+    .sign-icon{
+        font-size: 40px;
+    }
+
+    .footer-section{
+        width: 100%;
+        min-height: 500px;
+        background: darkblue;
+    }
+
+    .footer-section-flex{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subscribe-flex{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        padding: 5%;
+    }
+
+    .testimonies-flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%;
+        color: white;
+    }
+    .testimony{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .section1-p{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .job-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .job{
+        width: 100%;
+    }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    /* STYLES GO HERE */
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .how-it-works{
+        padding: 15px;
+        min-height: 600px;
+    }
+
+    .works-flex{
+        width: 100%;
+    }
+
+    .inner-text{
+        height: 20%;
+        justify-content: center;
+    }
+
+    .inner-signs{
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .signs{
+        width: 100%;
+        height: 40%;
+        padding: 5%;
+    }
+
+    .circle-border{
+        width: 100px;
+        height: 100px;
+        padding: 1%;
+        border-radius: 50%;
+    }
+
+    .sign-icon{
+        font-size: 40px;
+    }
+
+    .footer-section{
+        width: 100%;
+        min-height: 500px;
+        background: darkblue;
+    }
+
+    .footer-section-flex{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subscribe-flex{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        padding: 5%;
+    }
+
+    .testimonies-flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%;
+        color: white;
+    }
+    .testimony{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .section1-p{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .job-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .job{
+        width: 100%;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape) {
+    /* STYLES GO HERE */
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .how-it-works{
+        padding: 15px;
+        min-height: 600px;
+    }
+
+    .works-flex{
+        width: 100%;
+    }
+
+    .inner-text{
+        height: 20%;
+        justify-content: center;
+    }
+
+    .inner-signs{
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .signs{
+        width: 100%;
+        height: 40%;
+        padding: 5%;
+    }
+
+    .circle-border{
+        width: 100px;
+        height: 100px;
+        padding: 1%;
+        border-radius: 50%;
+    }
+
+    .sign-icon{
+        font-size: 40px;
+    }
+
+    .footer-section{
+        width: 100%;
+        min-height: 500px;
+        background: darkblue;
+    }
+
+    .footer-section-flex{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subscribe-flex{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        padding: 5%;
+    }
+
+    .testimonies-flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%;
+        color: white;
+    }
+    .testimony{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .section1-p{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .job-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .job{
+        width: 100%;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait) {
+    /* STYLES GO HERE */
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .how-it-works{
+        padding: 15px;
+        min-height: 600px;
+    }
+
+    .works-flex{
+        width: 100%;
+    }
+
+    .inner-text{
+        height: 20%;
+        justify-content: center;
+    }
+
+    .inner-signs{
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .signs{
+        width: 100%;
+        height: 40%;
+        padding: 5%;
+    }
+
+    .circle-border{
+        width: 100px;
+        height: 100px;
+        padding: 1%;
+        border-radius: 50%;
+    }
+
+    .sign-icon{
+        font-size: 40px;
+    }
+
+    .footer-section{
+        width: 100%;
+        min-height: 500px;
+        background: darkblue;
+    }
+
+    .footer-section-flex{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subscribe-flex{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        padding: 5%;
+    }
+
+    .testimonies-flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%;
+        color: white;
+    }
+    .testimony{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .section1-p{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .job-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .job{
+        width: 100%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width: 1224px) {
+    /* STYLES GO HERE */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width: 1824px) {
+    /* STYLES GO HERE */
+
+}
+
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px) {
+    /* STYLES GO HERE */
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .how-it-works{
+        padding: 15px;
+        min-height: 600px;
+    }
+
+    .works-flex{
+        width: 100%;
+    }
+
+    .inner-text{
+        height: 20%;
+        justify-content: center;
+    }
+
+    .inner-signs{
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .signs{
+        width: 100%;
+        height: 40%;
+        padding: 5%;
+    }
+
+    .circle-border{
+        width: 100px;
+        height: 100px;
+        padding: 1%;
+        border-radius: 50%;
+    }
+
+    .sign-icon{
+        font-size: 40px;
+    }
+
+    .footer-section{
+        width: 100%;
+        min-height: 500px;
+        background: darkblue;
+    }
+
+    .footer-section-flex{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subscribe-flex{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        padding: 5%;
+    }
+
+    .testimonies-flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%;
+        color: white;
+    }
+    .testimony{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .section1-p{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .job-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .job{
+        width: 100%;
+    }
+
+}
+
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (orientation: landscape) {
+    /* STYLES GO HERE */
+}
+
+@media only screen and (max-device-width: 568px) and (min-device-width: 320px) and (orientation: portrait){
+    .testimony {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+    
+
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (orientation: portrait) {
+    /* STYLES GO HERE */
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .how-it-works{
+        padding: 15px;
+        min-height: 600px;
+    }
+
+    .works-flex{
+        width: 100%;
+    }
+
+    .inner-text{
+        height: 20%;
+        justify-content: center;
+    }
+
+    .inner-signs{
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .signs{
+        width: 100%;
+        height: 40%;
+        padding: 5%;
+    }
+
+    .circle-border{
+        width: 100px;
+        height: 100px;
+        padding: 1%;
+        border-radius: 50%;
+    }
+
+    .sign-icon{
+        font-size: 40px;
+    }
+
+    .footer-section{
+        width: 100%;
+        min-height: 500px;
+        background: darkblue;
+    }
+
+    .footer-section-flex{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subscribe-flex{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        padding: 5%;
+    }
+
+    .testimonies-flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 5%;
+        color: white;
+    }
+    .testimony{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .section1-p{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .advert-background{
+        padding: 30px 0;
+        min-height:500px;
+    }
+
+    .job-description-flex{
+        height: 490px;
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side1{
+        width: 100%;
+        height: 40%;
+        background-color: black;
+        display: none;
+        flex-direction: column;
+    }
+
+    .side2{
+        width: 100%;
+        height: 100%;
+        background-color: blanchedalmond;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-side{
+        display: none;
+    }
+
+    .phone-size{
+        font-size: 14px;
+    }
+
+    .experience-pane{
+        padding: 20px;
+    }
+
+    .candidates-flex{
+        width: 100%;
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: black;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .job-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .job{
+        width: 100%;
+    }
+
+    .icon-side{
+        font-size: 45px;
+    }
+
+    .job-details{
+        font-size: 15px;
+    }
+    
+    .small-size{
+        font-size: 18px !important;
+    }
+}

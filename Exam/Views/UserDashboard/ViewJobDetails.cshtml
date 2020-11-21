@@ -1,0 +1,23 @@
+﻿@model Exam.Domains.Job
+@{
+    ViewBag.Title = "View Job";
+    Layout = "_Layout";
+}
+
+<section class="container-fluid background">
+    <div class="main-flex">
+        <div class="job-description-flex">
+            <div class="side1">
+                <span class="company-logo">skn</span>
+            </div>
+            <div class="side2">
+                <h3>@Model.JobPosition</h3>
+                <h4>@Model.BrandOrCompanyName</h4>
+                <p>@Model.JobType</p>
+                <p class="description">@Model.JobDescription</p>
+                <p>@Model.DatePosted</p>
+            </div>
+        </div>
+
+    </div>
+</section>

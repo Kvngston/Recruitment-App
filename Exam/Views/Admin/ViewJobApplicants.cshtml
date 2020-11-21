@@ -1,0 +1,35 @@
+﻿@model Tuple<List<Exam.Domains.User>, string>  
+
+@{
+    ViewData["Title"] = "ViewJobApplicants";
+}
+
+
+<section class="container-fluid background">
+    <div class="bg-img bg-img2 flex-container">
+        <h1>View Job Applicants</h1>
+    </div>
+</section>
+
+
+<section class="container-fluid background">
+    <div class="candidates-container-flex">
+        <h3>Job Applicants</h3>
+        @if (Model.Item1.Any())
+        {
+            @foreach (var applicant in Model.Item1)
+            {
+                <div class="candidates-flex mt-5">
+                    <p>@applicant.LastName</p>
+                    <p>@applicant.FirstName</p>
+                    <a asp-action="ViewApplicant" asp-route-Id="@applicant.Id" asp-route-jobId="@Model.Item2" class="btn action-btn2"><span class="fas fa-check"></span> View Application</a>
+                </div>
+            }
+        }
+        else
+        {
+            <h3>No Applicants for this job Yet.</h3>
+        }
+        
+    </div>
+</section>

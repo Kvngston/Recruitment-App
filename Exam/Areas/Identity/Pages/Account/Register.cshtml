@@ -1,0 +1,129 @@
+﻿@page
+@model RegisterModel
+@* @{ *@
+@*     ViewData["Title"] = "Register"; *@
+@* } *@
+@* *@
+@* <h1>@ViewData["Title"]</h1> *@
+@* *@
+@* <div class="row"> *@
+@*     <div class="col-md-4"> *@
+@*         <form asp-route-returnUrl="@Model.ReturnUrl" method="post"> *@
+@*             <h4>Create a new account.</h4> *@
+@*             <hr /> *@
+@*             <div asp-validation-summary="All" class="text-danger"></div> *@
+@*             <div class="form-group"> *@
+@*                 <label asp-for="Input.Email"></label> *@
+@*                 <input asp-for="Input.Email" class="form-control" /> *@
+@*                 <span asp-validation-for="Input.Email" class="text-danger"></span> *@
+@*             </div> *@
+@*             <div class="form-group"> *@
+@*                 <label asp-for="Input.Password"></label> *@
+@*                 <input asp-for="Input.Password" class="form-control" /> *@
+@*                 <span asp-validation-for="Input.Password" class="text-danger"></span> *@
+@*             </div> *@
+@*             <div class="form-group"> *@
+@*                 <label asp-for="Input.ConfirmPassword"></label> *@
+@*                 <input asp-for="Input.ConfirmPassword" class="form-control" /> *@
+@*                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span> *@
+@*             </div> *@
+@*             <button type="submit" class="btn btn-primary">Register</button> *@
+@*         </form> *@
+@*     </div> *@
+@*     <div class="col-md-6 col-md-offset-2"> *@
+@*         <section> *@
+@*             <h4>Use another service to register.</h4> *@
+@*             <hr /> *@
+@*             @{ *@
+@*                 if ((Model.ExternalLogins?.Count ?? 0) == 0) *@
+@*                 { *@
+@*                     <div> *@
+@*                         <p> *@
+@*                             There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a> *@
+@*                             for details on setting up this ASP.NET application to support logging in via external services. *@
+@*                         </p> *@
+@*                     </div> *@
+@*                 } *@
+@*                 else *@
+@*                 { *@
+@*                     <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal"> *@
+@*                         <div> *@
+@*                             <p> *@
+@*                                 @foreach (var provider in Model.ExternalLogins) *@
+@*                                 { *@
+@*                                     <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button> *@
+@*                                 } *@
+@*                             </p> *@
+@*                         </div> *@
+@*                     </form> *@
+@*                 } *@
+@*             } *@
+@*         </section> *@
+@*     </div> *@
+@* </div> *@
+
+
+<section class="container-fluid background">
+    <div class="bg-img flex-container">
+        <h3>Advertise with us today</h3>
+        <h1 class="mx-4">Grow your business and get Traffic</h1>
+    </div>
+</section>
+
+<section class="container-fluid advert-background">
+    <div class="container advert-flex">
+        <h3>Register</h3>
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="advert-form">
+            <form asp-route-returnUrl="@Model.ReturnUrl" enctype="multipart/form-data" class="form" method="post">
+                <div class="form-group">
+                    <label class="label" for="email">Email </label>
+                    <div class="divider"></div>
+                    <input type="text" class="form-item" name="email" id="email" asp-for="Input.Email" placeholder="Enter Your Email"/>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="firstName">First Name </label>
+                    <div class="divider"></div>
+                    <input type="text" class="form-item" name="firstName" id="firstName" asp-for="Input.FirstName" placeholder="Enter your First Name"/>
+                    <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="lastName">Last Name </label>
+                    <div class="divider"></div>
+                    <input type="text" class="form-item" name="lastName" id="lastName" asp-for="Input.LastName" placeholder="Enter your Last Name"/>
+                    <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="age">Age </label>
+                    <div class="divider"></div>
+                    <input type="number" class="form-item" name="age" id="age" asp-for="Input.Age" placeholder="Enter your Age"/>
+                    <span asp-validation-for="Input.Age" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="profileImage">Profile Image </label>
+                    <div class="divider"></div>
+                    <input type="file" class="form-item" name="profileImage" id="profileImage" asp-for="Input.ProfileImage" placeholder="Choose your profile picture"/>
+                    <span asp-validation-for="Input.ProfileImage" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="password">Password </label>
+                    <div class="divider"></div>
+                    <input type="password" class="form-item" name="password" id="password" asp-for="Input.Password" placeholder="Enter your password"/>
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-group" style="border-bottom: 1px solid white">
+                    <label class="label" for="confirmPassword">Confirm Password </label>
+                    <div class="divider"></div>
+                    <input type="password" class="form-item" name="confirmPassword" asp-for="Input.ConfirmPassword" id="confirmPassword" placeholder="Enter your password"/>
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+                <button class="btn btn-outline-success form-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"/>
+}

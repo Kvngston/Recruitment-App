@@ -1,0 +1,97 @@
+﻿@model Exam.Models.ResumeViewModel
+
+
+<section class="container-fluid background">
+    <div class="bg-img bg-img4 flex-container">
+        <h3>Add a Resume</h3>
+        <h1>Find That Dream Job Today</h1>
+    </div>
+</section>
+
+
+<section class="container-fluid background">
+    <div class="add-resume-flex">
+        <h1 class="text-center">Add Your Resume</h1>
+        <form asp-action="CreateResume" class="add-resume-form-flex" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="resume-form-group">
+                <label asp-for="BriefSelfDescription" class="control-label"></label>
+                <input asp-for="BriefSelfDescription" class="form-control"/>
+                <span asp-validation-for="BriefSelfDescription" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group">
+                <label asp-for="Skills" class="control-label"></label>
+                <input asp-for="Skills" class="form-control"/>
+                <span asp-validation-for="Skills" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group">
+                <label asp-for="EmploymentType" class="control-label"></label>
+                <input asp-for="EmploymentType" class="form-control"/>
+                <span asp-validation-for="EmploymentType" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group">
+                <label asp-for="CompanyName" class="control-label"></label>
+                <input asp-for="CompanyName" class="form-control"/>
+                <span asp-validation-for="CompanyName" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group">
+                <label asp-for="PositionName" class="control-label"></label>
+                <input asp-for="PositionName" class="form-control"/>
+                <span asp-validation-for="PositionName" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group">
+                <label asp-for="TimeDuration" class="control-label"></label>
+                <input asp-for="TimeDuration" class="form-control"/>
+                <span asp-validation-for="TimeDuration" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group">
+                <label asp-for="SummaryOfWorkDone" class="control-label"></label>
+                <input asp-for="SummaryOfWorkDone" class="form-control"/>
+                <span asp-validation-for="SummaryOfWorkDone" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group">
+                <label asp-for="SchoolName" class="control-label"></label>
+                <input asp-for="SchoolName" class="form-control"/>
+                <span asp-validation-for="SchoolName" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group">
+                <label asp-for="SchoolLocation" class="control-label"></label>
+                <input asp-for="SchoolLocation" class="form-control"/>
+                <span asp-validation-for="SchoolLocation" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group">
+                <label asp-for="TimeFrame" class="control-label"></label>
+                <input asp-for="TimeFrame" class="form-control"/>
+                <span asp-validation-for="TimeFrame" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group">
+                <label asp-for="CertificateAttained" class="control-label"></label>
+                <input asp-for="CertificateAttained" class="form-control"/>
+                <span asp-validation-for="CertificateAttained" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group">
+                <label asp-for="AchievementName" class="control-label"></label>
+                <input asp-for="AchievementName" class="form-control"/>
+                <span asp-validation-for="AchievementName" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group">
+                <label asp-for="AchievementYear" class="control-label"></label>
+                <input asp-for="AchievementYear" class="form-control"/>
+                <span asp-validation-for="AchievementYear" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group">
+                <label asp-for="ResumePdf" class="control-label"></label>
+                <input asp-for="ResumePdf" type="file" class="form-control"/>
+                <span asp-validation-for="ResumePdf" class="text-danger"></span>
+            </div>
+            <div class="resume-form-group-btn">
+                <input type="submit" value="Create" class="btn resume-btn"/>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
